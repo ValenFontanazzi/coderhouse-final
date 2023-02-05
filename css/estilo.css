@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+  outline: 1px solid red; }
+
+.header {
+  background-color: #8a8a8a;
+  padding: 1.2rem;
+  grid-area: header;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .header img {
+    width: 10rem; }
+  .header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem; }
+    .header nav ul a {
+      color: white;
+      text-decoration: none;
+      padding: 2rem; }
+      .header nav ul a:hover {
+        animation: animate__backInRight;
+        animation-duration: 2s;
+        background-color: #414141;
+        color: black; }
+    .header nav ul li:last-child a {
+      color: white;
+      background-color: lightblue;
+      text-decoration: none;
+      padding: 2rem;
+      border-radius: 0.8rem; }
+
+.main {
+  background-color: white;
+  padding: 1.2rem;
+  grid-area: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main .presentacion {
+    display: flex;
+    flex-direction: row; }
+    .main .presentacion .img {
+      object-fit: contain;
+      animation: bounceInLeft;
+      animation-duration: 1.5s; }
+    .main .presentacion .descripcion {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      animation: bounceInRight;
+      animation-duration: 1.5s; }
+      .main .presentacion .descripcion h2 {
+        font-size: 3.5rem;
+        color: blue;
+        text-align: left; }
+      .main .presentacion .descripcion p {
+        font-size: x-large;
+        color: grey;
+        line-height: 1.5;
+        text-align: left; }
+  .main .tecnologias {
+    background-color: lightblue;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .main .tecnologias h3 {
+      font-size: x-large;
+      text-align: center;
+      padding-bottom: 1rem; }
+    .main .tecnologias .carousel-control {
+      background-color: black; }
+  .main .opinion {
+    height: 5rem;
+    width: 100%;
+    margin: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .main .opinion p {
+      font-size: large; }
+    .main .opinion h3 {
+      font-size: x-large; }
+
+.footer {
+  height: 8rem;
+  background-color: rebeccapurple;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .footer .seguinos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .footer .redes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "face insta" "twitter linkedin"; }
+  .footer .seguinos img {
+    width: 2rem;
+    height: auto; }
+  .footer .about-us {
+    margin-top: 1rem; }
+
+@keyframes aparece {
+  20% {
+    opacity: 50%; }
+  40% {
+    opacity: 0%; } }
+
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }

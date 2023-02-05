@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+
+    <title>Layout de Sitio Web con CSS GRID</title>
+</head>
+<body>
+    <div class="container">
+		<header class="header">
+            <a href="./index.html"><img src="./assets/drycom.png" alt="logo_drycom"></a>
+			
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Nosotros</a>
+					</li>
+					<li>
+						<a href="#">Portafolio</a>
+					</li>
+					<li>
+						<a href="#">Tecnologías</a>
+					</li>
+					<li>
+						<a href="#">Servicios Profesionales</a>
+					</li>
+                    <li>
+						<a href="#">Nuestros Clientes</a>
+					</li>
+                    <li>
+						<a href="#">Contactanos</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+        <main class="main">
+            <div class="presentacion row w-100 pb-3">
+                <div class="img col-12 col-sm-7 order-last ">
+                    <img src="./assets/virtualizacion.jpg" class="w-100" alt="virtualizacion">
+                </div>
+                <div class="descripcion col-12 col-sm-5">
+                    <p> Somos </p>
+                    <h2>Drycom</h2>
+                    <p>Una empresa de virtualizacion de hardware</p>
+                </div>
+            </div>
+
+            <div class="tecnologias ">
+                <h3>Somos los mas capacitados en las siguientes tecnologías</h3>
+
+                <div id="carouselExampleFade" class="carousel slide carousel-fade p-5 border-5">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/vcenter.png" class="d-block w-100" alt="vsphere">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/veeam.png" class="d-block w-100" alt="veeam">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/aria.png" class="d-block w-100" alt="aria">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"> 
+                      <span class="carousel-control-prev-icon bg-primary m-3" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" background-color: rgb(33,97,140);" data-bs-slide="next">
+                      <span class="carousel-control-next-icon bg-primary m-3" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            </div>
+
+            <div class="opinion row w-100 pb-3">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/miguel.jpeg" class="card-img-top height: 400px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Miguel Catalan Diaz, Gerencia de IT en Banco Comafi</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quo excepturi eaque quibusdam animi maxime!</p>
+                    </div>
+                </div>
+                
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/mariela.jpeg" class="card-img-top height: auto;" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mariela Alcaraz, Jefa de IT en Osde</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quo excepturi eaque quibusdam animi maxime!</p>
+                    </div>
+                </div>
+            </div>
+            
+		</main>
+
+		<footer class="footer">
+			<div class="seguinos">
+                <h3>Seguinos en</h3>
+                <p></p>
+                <div class="redes">
+                    <div class="facebook"><img src="./assets/face.png" alt="facebook"></div>
+                    <div class="instagram"><img src="./assets/insta.png" alt="instagram"></div>
+                    <div class="twitter"><img src="./assets/twit.png" alt="twitter"></div>
+                    <div class="linkedin"><img src="./assets/link.png" alt="linkedin"></div>
+                </div>
+            </div>
+
+            <div class="about-us">
+                <h3>Drycom</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+		</footer>
+    </div>
+</body>
+</html>
